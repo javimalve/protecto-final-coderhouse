@@ -100,6 +100,13 @@ body {
 .tablauno {
   color: white; }
 
+.titulosh2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
 .seccionuno__titulosh2 {
   color: white;
   text-align: center;
@@ -119,6 +126,11 @@ body {
   font-size: 25px;
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.seccionuno__titulosh2:hover {
+  transform: scale(1.025, 1.025);
+  color: #e03e60;
+  background-color: white; }
 
 .titulosh2:hover {
   transform: scale(1.025, 1.025);
