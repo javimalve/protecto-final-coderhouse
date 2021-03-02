@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
 	<link href = "https://fonts.googleapis.com/css2? family = Ubuntu & display = swap" rel = "hoja de estilo ">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,34 +10,61 @@
 	<title>BLOG - SECTOR 7G - DISEÑO WEB CREATIVO - CREAMOS TU SITIO WEB</title>
 </head>
 <body>
-	<header class="mainheader"> <!-- BLOQUE -->
+	<header class="mainheader"> 
 		<div class="flex row center"><img class="mainheader__logositio" src="assets/MARCA-S7G.png" alt="imágen-de-relleno"></div>
-		<ul class="mainheader__menus">
-			<li><a class="mainheader__a" href="index.html">Home</a></li>
-			<li><a class="mainheader__a" href="servicios.html">Servicios</a>
-				<ul>
-					<li><a class="mainheader__a" href="#">Servicio 1</a></li>
-					<li><a class="mainheader__a" href="#">Servicio 2</a></li>
-				</ul>
-			</li>
-			<li><a class="mainheader__a" href="nosotros.html">Nosotros</a></li>
-			<li><a class="mainheader__a" href="blog.html">Blog</a></li>
-			<li><a class="mainheader__a" href="contacto.html">Contacto</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-md">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon" style="color:#ffffff"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+		    	<ul class="navbar-nav justify-content-center">
+		      		<li class="nav-item"><a class="nav-link mainheader__a" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a"  href="servicios.html">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="contacto.html">Contacto</a></li>		      		      
+		    	</ul>
+			</div>
+		</nav>
 	</header>
 
 	<h1 class="titulosh2">BLOG</h1>
 
-	<section class="seccionuno"> <!--BLOQUE BEM -->
-		<div class="seccionuno__divuno">
-			<h2 class="seccionuno__titulosh2">Lorem Ipsum</h2>
-			<H3 class="seccionuno__titulosh3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</H3>
-			<p class="seccionuno__parrafos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+	<section class="seccionblog flex center">				
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="assets/html5.png" alt="Card image cap">
+			<div class="card-body">
+		    	<h5 class="card-title">HTML5</h5>
+		    	<p class="card-text">HTML es el lenguaje de marcado estándar para páginas web. Con HTML puede crear su propio sitio web.</p>
+		    	<a href="https://www.w3schools.com/html/default.asp" class="btn btn-primary">Leer más</a>
+		  	</div>
 		</div>
-		<div class="flex row center"><img class="imagen1" src="assets/diseno-creativo.jpg" alt="imágen-de-relleno"></div>
+	
+		<div style="padding: 10px;"></div>
+
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="assets/css3.png" alt="Card image cap">
+			<div class="card-body">
+		    	<h5 class="card-title">CSS3</h5>
+		    	<p class="card-text">CSS es el lenguaje que usamos para diseñar un documento HTML. CSS describe cómo se deben mostrar los elementos HTML.</p>
+		    	<a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary">Leer más</a>
+		  	</div>
+		</div>
+		<div style="padding: 10px;"></div>
+
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="assets/bootstrap.png" alt="Card image cap">
+			<div class="card-body">
+		    	<h5 class="card-title">BOOTSTRAP 4</h5>
+		    	<p class="card-text">Bootstrap es el marco de trabajo HTML, CSS y JavaScript más popular para desarrollar sitios web receptivos y móviles.</p>
+		    	<a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" class="btn btn-primary">Leer más</a>
+		  	</div>
+		</div>				
 	</section>
 
-	<footer class="footer"> <!--BLOQUE-->
+	<div style="padding-top: 50px ;"></div>
+	
+	<footer class="footer">
 		<div class="flex row center footer__socialmedia">
 			<img class="footer__iconosocial" src="assets/instagram.png" alt="ícono instragram">
 			<img class="footer__iconosocial" src="assets/twitter.png" alt="ícono twitter">

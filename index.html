@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="HTML5, CSS3, JS, bootstrap, DISEÑO, WEB, PROGRAMACION, DESARROLLO, WORDPRESS, RESPONSIVE, HOSTING">
 	<meta name="description" content="Grandes como tu negocio. Pequeños como su pantalla. Será responsive. Tu web se adaptará a todo tipo de dispositivos, optimizando los tiempos de carga y facilitando la visibilidad de tus productos.">	
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
@@ -12,38 +12,40 @@
 	<title>HOME - SECTOR 7G - DISEÑO WEB CREATIVO - CREAMOS TU SITIO WEB</title>
 </head>
 <body>
-	<header class="mainheader"> <!-- BLOQUE BEM -->
+	<header class="mainheader"> 
 		<div class="flex row center"><img class="mainheader__logositio" src="assets/MARCA-S7G.png" alt="imágen-de-relleno"></div>
-		<ul class="mainheader__menus">
-			<li><a class="mainheader__a" href="index.html">Home</a></li>
-			<li><a class="mainheader__a" href="servicios.html">Servicios</a>
-				<ul>
-					<li><a class="mainheader__a" href="#">Servicio 1</a></li>
-					<li><a class="mainheader__a" href="#">Servicio 2</a></li>
-				</ul>
-			</li>
-			<li><a class="mainheader__a" href="nosotros.html">Nosotros</a></li>
-			<li><a class="mainheader__a" href="blog.html">Blog</a></li>
-			<li><a class="mainheader__a" href="contacto.html">Contacto</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-md">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon" style="color:#ffffff"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+		    	<ul class="navbar-nav justify-content-center">
+		      		<li class="nav-item"><a class="nav-link mainheader__a" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a"  href="servicios.html">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="contacto.html">Contacto</a></li>		      		      
+		    	</ul>
+			</div>
+		</nav>
 	</header>
 
-	<section class="seccioncero"> <!-- BLOQUE BEM -->
-		<div class="flex row center"><img class="seccioncero__imagen2" src="assets/bloqueheroe.png" alt="imágen-de-relleno"></div>
-
-	</section>
-
-
-	<section class="seccionuno"> <!--BLOQUE BEM -->
-		<div class="seccionuno__divuno">
-			<h2 class="seccionuno__titulosh2">DISEÑO WEB CREATIVO</h2>
-			<H3 class="seccionuno__titulosh3">Webs específicamente pensadas para atraer a tus clientes</H3>
-			<p class="seccionuno__parrafos">Las webs que llevamos a cabo en SECTOR 7G son mucho más que un bonito escaparate donde lucir tus productos. Ofrecemos un trabajo de consultoría previa para conocer quién es tu potencial cliente y qué va a buscar en tu web, ya que no es lo mismo descargar una app que reservar una cita o pedir un presupuesto.
-			Nuestro objetivo es que, sea quien sea tu cliente, encuentre lo que busca en el menor tiempo posible. En 3 segundos, los usuarios ya se han formado la opinión sobre una web, y un paso más del necesario para conseguir lo que necesitan puede significar una venta menos. 
-			Si ofreces una web clara e intuitiva, lograrás captar
-			y retener a tus usuarios desafio git.</p>
+	<section class="seccioncrack">
+		<div class="container-fluid cc">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+					<h2 class="seccionuno__titulosh2">DISEÑO WEB CREATIVO</h2>
+					<H3 class="seccionuno__titulosh3">Webs específicamente pensadas para atraer a tus clientes</H3>
+					<p class="seccionuno__parrafos">Webs pensadas estratégicamente para  captar y convertir clientes.
+					Las webs que llevamos a cabo en SECTOR 7G son mucho más que una linda página donde mostrar tus productos. Ofrecemos un trabajo de consultoría previa para conocer quién es tu potencial cliente y qué va a buscar en tu web, ya que no es lo mismo descargar una app que reservar una cita o pedir un presupuesto. 
+					Nuestro objetivo es que, sea quien sea tu cliente, encuentre lo que busca en el menor tiempo posible. ¿Sabías que un usuario tarda sólo 3 segundos en formar una opinión sobre una web? Por lo tanto, ofrecer un diseño acorde es un paso más del necesario para conseguir convertir ventas. Así, ofrecer una web clara e intuitiva es la mejor forma de captar y retener a tus usuarios y clientes.</p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+					<img class="img-fluid" src="assets/diseno-creativo.jpg" alt="imágen-de-relleno">
+				</div>						
+			</div>
 		</div>
-		<div class="flex row center"><img class="imagen1" src="assets/diseno-creativo.jpg" alt="imágen-de-relleno"></div>
 	</section>
 
 	<section class="secciondos">
@@ -61,28 +63,25 @@
 		</div>
 	</section>
 
+	<section>
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	 	<div class="modal-dialog">
 	    	<div class="modal-content">
 	    		<div class="modal-header">
 	        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      		</div>
-	    		<div class="modal-body">
-					<form class="contactform2" action="#" method="post">
+	    		<div class="modal-body seccionmodal">
+					<form class="contactform" action="#" method="post">
 						<fieldset>
-							<legend>CONTACTO</legend>
+							<legend>CONTACTO</legend>		
 							<label for="nombre">Nombre:</label>
 							<input type="text" name="nombre" placeholder="Ingrese su nombre:"> <br><br>
 							<label for="apellido">Nombre:</label>
 							<input type="text" name="apellido" placeholder="Ingrese su apellido:"> <br><br>
 							<label for="email">Email:</label>
 							<input type="email" name="email" placeholder="Ingrese su email:"> <br><br>
-							<label for="estadocivil"> Estado Civil:</label>
-							<select name="estadocivil">
-								<option value="soltero">Soltero</option>
-								<option value="casado">Casado</option>
-								<option value="divorciado">Divorciado</option>
-							</select> <br><br>
+							<label for="email">Teléfono:</label>
+							<input type="number" name="telefono" placeholder="Ingrese su telefono:"> <br><br>
 							<label for="newsletter">¿Desea recibir nuestro newsletter?</label>
 							<input type="checkbox" name="newsletter"><br><br>
 							<label for="comentarios">Comentarios</label><br>
@@ -95,8 +94,9 @@
 	    	</div>
 	  	</div>
 	</div>
+	</section>
 
-	<footer class="footer"> <!--BLOQUE BEM-->
+	<footer class="footer">
 		<div class="flex row center footer__socialmedia">
 			<img class="footer__iconosocial" src="assets/instagram.png" alt="ícono instragram">
 			<img class="footer__iconosocial" src="assets/twitter.png" alt="ícono twitter">

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
 	<link href = "https://fonts.googleapis.com/css2? family = Ubuntu & display = swap" rel = "hoja de estilo ">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,39 +10,47 @@
 	<title>CONTACTO - SECTOR 7G - DISEÑO WEB CREATIVO - CREAMOS TU SITIO WEB</title>
 </head>
 <body>
-	<header class="mainheader"> <!-- BLOQUE -->
+	<header class="mainheader"> 
 		<div class="flex row center"><img class="mainheader__logositio" src="assets/MARCA-S7G.png" alt="imágen-de-relleno"></div>
-		<ul class="mainheader__menus">
-			<li><a class="mainheader__a" href="index.html">Home</a></li>
-			<li><a class="mainheader__a" href="servicios.html">Servicios</a>
-				<ul>
-					<li><a class="mainheader__a" href="#">Servicio 1</a></li>
-					<li><a class="mainheader__a" href="#">Servicio 2</a></li>
-				</ul>
-			</li>
-			<li><a class="mainheader__a" href="nosotros.html">Nosotros</a></li>
-			<li><a class="mainheader__a" href="blog.html">Blog</a></li>
-			<li><a class="mainheader__a" href="contacto.html">Contacto</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-md">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon" style="color:#ffffff"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+		    	<ul class="navbar-nav justify-content-center">
+		      		<li class="nav-item"><a class="nav-link mainheader__a" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a"  href="servicios.html">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="contacto.html">Contacto</a></li>		      		      
+		    	</ul>
+			</div>
+		</nav>
 	</header>
 
 	<h1 class="titulosh2">CONTACTO</h1>
 
+	<section class="seccioncrack">
+		<div class="container-fluid cc">
+			<div class="flex row center">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">				
+					<p class="seccionuno__parrafos">Si queres saber cómo podemos aportar productividad y eficacia a tu negocio, no dudes en escribirnos! Dejanos tus datos y congeniamos una reunión virtual para conocernos.</p>
+				</div>					
+			</div>
+		</div>
+	</section>	
+
+	<section class="flex center">
 	<form class="contactform" action="#" method="post">
-		<fieldset>
-			<legend>CONTACTO</legend>
+		<fieldset>			
 			<label for="nombre">Nombre:</label>
 			<input type="text" name="nombre" placeholder="Ingrese su nombre:"> <br><br>
 			<label for="apellido">Nombre:</label>
 			<input type="text" name="apellido" placeholder="Ingrese su apellido:"> <br><br>
 			<label for="email">Email:</label>
 			<input type="email" name="email" placeholder="Ingrese su email:"> <br><br>
-			<label for="estadocivil"> Estado Civil:</label>
-			<select name="estadocivil">
-				<option value="soltero">Soltero</option>
-				<option value="casado">Casado</option>
-				<option value="divorciado">Divorciado</option>
-			</select> <br><br>
+			<label for="email">Teléfono:</label>
+			<input type="number" name="telefono" placeholder="Ingrese su telefono:"> <br><br>
 			<label for="newsletter">¿Desea recibir nuestro newsletter?</label>
 			<input type="checkbox" name="newsletter"><br><br>
 			<label for="comentarios">Comentarios</label><br>
@@ -52,8 +60,9 @@
 		</fieldset>
 		
 	</form>
+	</section>
 
-	<footer class="footer"> <!--BLOQUE-->
+	<footer class="footer">
 		<div class="flex row center footer__socialmedia">
 			<img class="footer__iconosocial" src="assets/instagram.png" alt="ícono instragram">
 			<img class="footer__iconosocial" src="assets/twitter.png" alt="ícono twitter">

@@ -22,6 +22,13 @@ body {
   padding-top: 15px;
   color: white; }
 
+.seccionmodal {
+  background-color: #0C1019;
+  color: white; }
+
+.seccionblog {
+  padding: 30px; }
+
 .flex {
   display: flex; }
 
@@ -70,8 +77,8 @@ body {
 .mainheader__menus {
   font-family: 'Ubuntu', sans-serif;
   color: #e03e60;
-  text-align: center;
-  list-style: none;
+  /*text-align: center;
+	list-style: none;*/
   font-size: 10px;
   margin: 30px; }
 
@@ -124,8 +131,7 @@ body {
 .titulosecdos {
   text-align: center;
   font-size: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding: 15px; }
 
 .seccionuno__titulosh2:hover {
   transform: scale(1.025, 1.025);
@@ -170,3 +176,6 @@ ol {
   width: 250px;
   padding-top: 30px;
   padding-bottom: 30px; }
+
+.seccioncrack {
+  padding-top: 30px; }

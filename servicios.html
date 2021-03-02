@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com">
 	<link href = "https://fonts.googleapis.com/css2? family = Ubuntu & display = swap" rel = "hoja de estilo ">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,34 +10,55 @@
 	<title>SERVICIOS - SECTOR 7G - DISEÑO WEB CREATIVO - CREAMOS TU SITIO WEB</title>
 </head>
 <body>
-	<header class="mainheader"> <!-- BLOQUE BEM-->
+	<header class="mainheader"> 
 		<div class="flex row center"><img class="mainheader__logositio" src="assets/MARCA-S7G.png" alt="imágen-de-relleno"></div>
-		<ul class="mainheader__menus">
-			<li><a class="mainheader__a" href="index.html">Home</a></li>
-			<li><a class="mainheader__a" href="servicios.html">Servicios</a>
-				<ul>
-					<li><a class="mainheader__a" href="#">Servicio 1</a></li>
-					<li><a class="mainheader__a" href="#">Servicio 2</a></li>
-				</ul>
-			</li>
-			<li><a class="mainheader__a" href="nosotros.html">Nosotros</a></li>
-			<li><a class="mainheader__a" href="blog.html">Blog</a></li>
-			<li><a class="mainheader__a" href="contacto.html">Contacto</a></li>
-		</ul>
+		<nav class="navbar navbar-expand-md">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon" style="color:#ffffff"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+		    	<ul class="navbar-nav justify-content-center">
+		      		<li class="nav-item"><a class="nav-link mainheader__a" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a"  href="servicios.html">Servicios</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link mainheader__a" href="contacto.html">Contacto</a></li>		      		      
+		    	</ul>
+			</div>
+		</nav>
 	</header>
 
 	<h1 class="titulosh2">SERVICIOS</h1>
 
-	<section class="seccionuno"> <!--BLOQUE BEM -->
-		<div class="seccionuno__divuno">
-			<h2 class="seccionuno__titulosh2">Lorem Ipsum</h2>
-			<H3 class="seccionuno__titulosh3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</H3>
-			<p class="seccionuno__parrafos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-		</div>
-		<div class="flex row center"><img class="imagen1" src="assets/diseno-creativo.jpg" alt="imágen-de-relleno"></div>
-	</section>	
+	<section class="seccioncrack">
+		<div class="container-fluid cc">
+			<div class="row">
 
-	<footer class="footer"> <!--BLOQUE BEM-->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+					<img class="img-fluid" src="assets/ideas.jpg" alt="imágen-de-relleno">
+				</div>	
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+					<h2 class="seccionuno__titulosh2">DISEÑO WEB CREATIVO</h2>
+					<H3 class="seccionuno__titulosh3">Webs específicamente pensadas para atraer a tus clientes</H3>
+					<p class="seccionuno__parrafos">Nuestros servicios son creados y desarrollados en base a cada cliente. Nuestro objetivos son los tuyos, por eso antes de cada presupuesto tenemos una reunión para conocer tus necesidades y poder ayudarte a cubrirlas!</p>
+					<p class="seccionuno__parrafos">Para eso, te ofrecemos nuestros conocimientos en:</p>
+					<ol>
+						<ul> - HTML5</ul>
+						<ul> - CSS3</ul>
+						<ul> - JavaScript</ul>
+						<ul> - PHP y MySQL</ul>
+						<ul> - Posicionamiento SEO</ul>
+					</ol>
+				</div>
+									
+			</div>
+		</div>
+	</section>
+
+	<div style="padding-top: 50px ;"></div>
+
+	<footer class="footer">
 		<div class="flex row center footer__socialmedia">
 			<img class="footer__iconosocial" src="assets/instagram.png" alt="ícono instragram">
 			<img class="footer__iconosocial" src="assets/twitter.png" alt="ícono twitter">
